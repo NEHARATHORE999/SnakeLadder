@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* background-color: aqua; */
+    background-color: rgb(235, 231, 202);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.cont{
+    margin-top: 20px;
+    display: grid;
+    width: 600px;
+    grid-template-columns: repeat(10,1fr);
+}
+
+.cont div{
+    height: 60px;
+    width: 60px;
+    border: .5px solid black;
+}
+
+#b0{
+    position: relative;
+    left: -62px;
+    top: -62px;
+    border: none;
+
+}
+
+
+#p1,#p2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(236, 82,82);
+    border: 3px solid black;
+    border-radius: 100px;
+    position: relative;
+}
+#p1{
+    position: relative;
+    top: 0px;
+    transition: all linear .5s;
+    /* left: -62px; */
+    z-index: 1;
+}
+#p2{
+    position: relative;
+    /* top: -55px; */
+    transition: all linear .5s;
+    /* left: -62px; */
+    z-index: 1;
+    background-color: yellow;
+}
+img{
+    position: relative;
+    top: -677px;
+    left: 8px;
+    width: 615px;
+    height: 615px;
+}
+
+#diceCont{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 200px;
+    left: 120px;
+    font-size: 2rem;
+}
+#diceBtn{
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(75, 140,197);
+    width: 200px;
+}
